@@ -1,1 +1,1 @@
-web: gunicorn bd_proj.wsgi --log-file -
+web: gunicorn test_cpu.wsgi --log-file -
