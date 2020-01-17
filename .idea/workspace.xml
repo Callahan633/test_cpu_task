@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="523b6bf3-241d-47dd-bb3f-443c0371aa9f" name="Default Changelist" comment="" />
+    <list default="true" id="523b6bf3-241d-47dd-bb3f-443c0371aa9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cpu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cpu/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +36,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -100,7 +105,8 @@
       <workItem from="1578206752042" duration="244000" />
       <workItem from="1578250658575" duration="260000" />
       <workItem from="1578561391813" duration="1160000" />
-      <workItem from="1579261712639" duration="6242000" />
+      <workItem from="1579261712639" duration="6926000" />
+      <workItem from="1579270275936" duration="748000" />
     </task>
     <servers />
   </component>
@@ -108,6 +114,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="698" y="306" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579271002906">
+      <screen x="70" y="27" width="1850" height="948" />
+    </state>
+    <state x="698" y="306" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.948@70.27.1850.948" timestamp="1579271002906" />
     <state x="686" y="277" width="379" height="537" key="FileChooserDialogImpl" timestamp="1578131221751">
       <screen x="70" y="27" width="1610" height="1023" />
     </state>
@@ -117,10 +127,10 @@
       <screen x="70" y="27" width="1610" height="1023" />
     </state>
     <state x="364" y="173" width="1022" height="737" key="SettingsEditor/70.27.1610.1023@70.27.1610.1023" timestamp="1578131267790" />
-    <state x="651" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1579261841545">
+    <state x="651" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1579270276314">
       <screen x="70" y="27" width="1850" height="948" />
     </state>
     <state x="576" y="352" key="com.intellij.ide.util.TipDialog/70.27.1610.1023@70.27.1610.1023" timestamp="1578250918399" />
-    <state x="651" y="328" key="com.intellij.ide.util.TipDialog/70.27.1850.948@70.27.1850.948" timestamp="1579261841545" />
+    <state x="651" y="328" key="com.intellij.ide.util.TipDialog/70.27.1850.948@70.27.1850.948" timestamp="1579270276314" />
   </component>
 </project>
