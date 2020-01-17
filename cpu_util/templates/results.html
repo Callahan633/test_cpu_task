@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>CPU Info</title>
+</head>
+<body>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr style="cursor:pointer" >
+            <th data-type="string" scope="col">Time</th>
+            <th data-type="string" scope="col">CPU Utilization</th>
+        </tr>
+        </thead>
+        {% for record in records %}
+            <tr>
+                <td>{{ record.record_datetime }}</td>
+                <td>{{ record.record_cpu_data }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+<script type="text/javascript">
+    let grid = document.getElementsByClassName('table')[0];
+    let counter = 1;
+
+    grid.onclick = function(e) {
+      if (e.target.tagName !== 'TH') return;
+      sortGrid(e.target.cellIndex, e.target.getAttribute('data-type'));
+      counter++;
+    };
+
+    function sortGrid(colNum, type) {
+      let tbody = grid.getElementsByTagName('tbody')[0];
+
+      let rowsArray = [].slice.call(tbody.rows);
+
+      let compare;
+
+      switch (type) {
+        case 'number':
+            if (counter % 2 === 1) {
+                compare = function (rowA, rowB) {
+                    return +rowA.cells[colNum].innerHTML - +rowB.cells[colNum].innerHTML;
+                };
+            } else {
+                compare = function (rowA, rowB) {
+                    return +rowB.cells[colNum].innerHTML - +rowA.cells[colNum].innerHTML;
+                };
+            }
+          break;
+        case 'string':
+            if (counter % 2 === 1) {
+                compare = function(rowA, rowB) {
+                    return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
+                };
+            } else {
+                compare = function (rowA, rowB) {
+                    return rowB.cells[colNum].innerHTML > rowA.cells[colNum].innerHTML ? 1 : -1;
+                };
+            }
+          break;
+      }
+
+      // сортировать
+      rowsArray.sort(compare);
+
+      // Убрать tbody из большого DOM документа для лучшей производительности
+      grid.removeChild(tbody);
+
+      // добавить результат в нужном порядке в TBODY
+      // они автоматически будут убраны со старых мест и вставлены в правильном порядке
+      for (let i = 0; i < rowsArray.length; i++) {
+        tbody.appendChild(rowsArray[i]);
+      }
+
+      grid.appendChild(tbody);
+    }
+</script>
+</body>
+</html>
