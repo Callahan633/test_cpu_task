@@ -24,7 +24,7 @@ SECRET_KEY = '3pri(+#xh-e@66k=4w5m-sxx#ag_5@c4ng3+rspo_68$r5h*7+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['141.101.196.115',]
 
 
 # Application definition
