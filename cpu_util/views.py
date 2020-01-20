@@ -22,16 +22,13 @@ class CreateRecord(APIView):
 
 class GetRecords(APIView, LimitOffsetPagination):
     serializer_class = MessageSerializer
-    queryset = Record.objects.all().order_by('-record_datetime')
     template_name = 'results.html'
     renderer_classes = (TemplateHTMLRenderer,)
     model = serializer_class.Meta.model
     permission_classes = (AllowAny,)
-    pagination_classes = LimitOffsetPagination
-    default_limit = 100
 
     def get(self, request):
-        queryset = self.model.objects.all().order_by('-record_datetime')
+        queryset = self.model.objects.all().order_by('-record_datetime')[:-100]
         return Response({'records': queryset})
 
     # def list(self, request, *args, **kwargs):
