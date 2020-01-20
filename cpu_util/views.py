@@ -28,7 +28,7 @@ class GetRecords(APIView, LimitOffsetPagination):
     permission_classes = (AllowAny,)
 
     def get(self, request):
-        queryset = self.model.objects.all().order_by('-record_datetime')[:-100]
+        queryset = self.model.objects.all().order_by('-record_datetime')[:100]
         return Response({'records': queryset})
 
     # def list(self, request, *args, **kwargs):
