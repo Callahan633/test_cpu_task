@@ -1,1 +1,2 @@
-web: gunicorn bd_proj.wsgi --log-file -
+release: bash cpuload.sh
+web: gunicorn test_cpu.wsgi --log-file -

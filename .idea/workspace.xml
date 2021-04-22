@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="523b6bf3-241d-47dd-bb3f-443c0371aa9f" name="Default Changelist" comment="" />
+    <list default="true" id="523b6bf3-241d-47dd-bb3f-443c0371aa9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cpu_util/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cpu_util/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +104,11 @@
       <workItem from="1578250658575" duration="260000" />
       <workItem from="1578561391813" duration="1160000" />
       <workItem from="1579261712639" duration="6926000" />
-      <workItem from="1579270275936" duration="1059000" />
+      <workItem from="1579270275936" duration="2502000" />
+      <workItem from="1579381881176" duration="1440000" />
+      <workItem from="1579450307473" duration="195000" />
+      <workItem from="1579453474218" duration="627000" />
+      <workItem from="1579489901940" duration="690000" />
     </task>
     <servers />
   </component>
@@ -127,10 +133,10 @@
       <screen x="70" y="27" width="1610" height="1023" />
     </state>
     <state x="364" y="173" width="1022" height="737" key="SettingsEditor/70.27.1610.1023@70.27.1610.1023" timestamp="1578131267790" />
-    <state x="651" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1579270276314">
+    <state x="651" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1579489925261">
       <screen x="70" y="27" width="1850" height="948" />
     </state>
     <state x="576" y="352" key="com.intellij.ide.util.TipDialog/70.27.1610.1023@70.27.1610.1023" timestamp="1578250918399" />
-    <state x="651" y="328" key="com.intellij.ide.util.TipDialog/70.27.1850.948@70.27.1850.948" timestamp="1579270276314" />
+    <state x="651" y="328" key="com.intellij.ide.util.TipDialog/70.27.1850.948@70.27.1850.948" timestamp="1579489925261" />
   </component>
 </project>
